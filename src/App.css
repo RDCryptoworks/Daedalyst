@@ -1,0 +1,169 @@
+:root {
+  --content-width: 1200px;
+  --content-width-half: 600px;
+  --c-background: #05090B;
+  --c-background-2: #3C4E5A;
+  --c-background-3: #16242E;
+  --c-background-4: #1D2F3B;
+  --c-txt: #FFFFFF;
+  --c-txt-2: #5C6D78;
+  --c-txt-3: #030609;
+  --c-txt-4: #90a2ab;
+  --c-primary: #c36503;
+  --c-primary-50: #c365037F;
+  --c-primary-rgb: 195, 101, 3;
+  --c-primary-hover: #c365037F;
+  --c-secondary: #3C4E5A;
+  --c-secondary-hover: #516471;
+  --c-terciary: #4DD7DD;
+  --c-terciary-50: #4DD7DD7F;
+  --c-exit: #EE057B;
+  --t-shadow-1: 0 0 10px var(--c-primary);
+  --t-shadow-2: 0 0 20px var(--c-primary-50);
+  --t-shadow-3: 0 0 15px var(--c-primary);
+  --t-shadow-terciary-1: 0 0 20px var(--c-terciary-50);
+  --r-border: 16px;
+  --r-border-2: 8px;
+  --r-border-3: 20px;
+  --r-border-4: 15px;
+  --card-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  --popup-container-background: rgba(5, 9, 11, 0.7);
+  --popup-shadow: 0 0 40px rgba(5, 9, 11, 0.7);
+  --popup-container-backdrop: blur(10px);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: poppins,Arial,Verdana,Geneva,sans-serif;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  background-color: var(--c-background);
+  color: var(--c-txt);
+}
+
+div, body, input, span, a {
+  font-family: poppins,Arial,Verdana,Geneva,sans-serif;
+  box-sizing: border-box;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.txt {
+  position: relative;
+  font-size: 16px;
+}
+
+a.btn.small, div.btn.small {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 15px;
+}
+
+a.btn.primary, div.btn.primary {
+  background-color: var(--c-primary);
+  box-shadow: var(--t-shadow-1);
+  color: var(--c-txt-3);
+}
+
+a.btn, div.btn {
+  width: fit-content;
+  position: relative;
+  height: 50px;
+  background-color: var(--c-secondary);
+  color: var(--c-txt);
+  border-radius: var(--r-border);
+  cursor: pointer;
+  transition: all .2s ease;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 50px;
+}
+
+a.btn.primary, div.btn.primary {
+  background-color: var(--c-primary);
+  box-shadow: var(--t-shadow-1);
+  color: var(--c-txt-3);
+}
+
+a.btn, div.btn {
+  width: fit-content;
+  position: relative;
+  height: 50px;
+  background-color: var(--c-secondary);
+  color: var(--c-txt);
+  border-radius: var(--r-border);
+  cursor: pointer;
+  transition: all .2s ease;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 50px;
+}
+
+a.btn.primary:hover, div.btn.primary:hover {
+  background-color: var(--c-primary-hover);
+}
+
+.txt {
+  position: relative;
+  font-size: 16px;
+}
+
+a.btn.disabled.alt, div.btn.disabled.alt {
+  background-color: var(--c-background-2);
+}
+
+a.btn.disabled, div.btn.disabled {
+  background-color: var(--c-background-3);
+  cursor: not-allowed;
+  color: var(--c-txt-2);
+  box-shadow: none;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+
+.Dropdown-control {
+  position: relative;
+  overflow: hidden;
+  background-color: transparent !important;
+  border: 1px solid #ccc !important;
+  box-sizing: border-box;
+  color: #333;
+  cursor: default;
+  outline: none;
+  padding: 8px 52px 8px 10px;
+  transition: all 200ms ease;
+  color: var(--c-txt) !important;
+  border-radius: var(--r-border) !important;
+  min-width: 125px !important;
+  border: var(--c-txt-2) solid 2px !important;
+}
+
